@@ -1,0 +1,13 @@
+.elemet__like {
+    background: transparent;
+    background-image: url(../../../images/heart.svg);
+    width: 22px;
+    height: 19px;
+    border: none;
+    object-fit: contain;
+}
+
+.elemet__like:hover {
+    background-image: url(../../../images/heart-hover.svg);
+    cursor: pointer;
+}

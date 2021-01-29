@@ -1,0 +1,25 @@
+.elements {
+    margin: 0 auto;
+    padding-top: 47px;
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(31%, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 17px;
+    grid-row-gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .elements {
+        grid-template-columns: repeat(2, minmax(47%, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .elements {
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+        grid-template-rows: repeat(6, 1fr);
+    }
+  }
