@@ -4,7 +4,7 @@
     justify-content: start;
     padding-top: 40px;
     max-width: 880px;
-    width: 67%;
+    width: 69%;
     margin: 0 auto;
 }
 
@@ -14,3 +14,11 @@
         justify-content: center;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .profile {
+        max-width: 282px;
+        width: 90%;
+    }
+  }
+
