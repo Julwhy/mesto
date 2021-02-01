@@ -1,6 +1,6 @@
 .profile-info {
     display: flex;
-    max-width: 336px;
+    width: 336px;
     flex-direction: column;
     padding-left: 26px;
 }
@@ -11,6 +11,7 @@
         padding-left: 0;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
   }
 

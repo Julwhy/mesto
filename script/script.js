@@ -6,41 +6,40 @@ let jobInput = popup.querySelector('.popup__item_el_description')
 let nameProfile = document.querySelector('.profile-info__name')
 let description = document.querySelector('.profile-info__description')
 
+//Открытие и закрытие формы по кнопкам
 
 function togglePopup() {
     popup.classList.toggle('popup_opened');
-
-    nameInput.value = nameProfile.textContent;
-    jobInput.value = description.textContent;
-
 }
 
 openButton.addEventListener('click', togglePopup);
+closeButtom.addEventListener('click', togglePopup);
 
+// Заполнение формы данными профайла
+function openPopup() {
+    nameInput.value = nameProfile.textContent;
+    jobInput.value = description.textContent;
+}
 
+openButton.addEventListener('click', openPopup);
+
+// Заполнение профайла данными из формы
 function formSubmitHandler (evt) {
     evt.preventDefault();
-
-    //nameInput = nameInput.value;
-    //jobInput = jobInput.value;
 
     nameProfile.textContent = nameInput.value;
     description.textContent = jobInput.value;
 
     popup.classList.toggle('popup_opened');
-
 }
 
+popup.addEventListener('submit', formSubmitHandler);
+
+// Закрытие формы по overlay
 function closePopup(evt) {
     if (evt.target === evt.currentTarget) {
         togglePopup(evt)
     }
 }
 
-
-
-
-
-closeButtom.addEventListener('click', togglePopup);
 popup.addEventListener('click', closePopup);
-popup.addEventListener('submit', formSubmitHandler);

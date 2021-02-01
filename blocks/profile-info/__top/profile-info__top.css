@@ -1,4 +1,12 @@
 .profile-info__top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
+
+@media screen and (max-width: 1000px) {
+    .profile-info__top {
+        justify-content: center;
+    }
+  }

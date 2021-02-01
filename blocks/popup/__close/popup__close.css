@@ -4,12 +4,16 @@
     position: absolute;
     right: -40px;
     top: -40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
     background-image: url(../../../images/close-icon.svg);
     background-size: 40px;
+    outline: none;
 }
 
 .popup__close:hover {
-    background-image: url(../../../images/close-icon-hover.svg);
+    opacity: 0.6;
     cursor: pointer;
 }
 
