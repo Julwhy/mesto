@@ -12,13 +12,16 @@ function togglePopup() {
     popup.classList.toggle('popup_opened');
 }
 
-openButton.addEventListener('click', togglePopup);
+//openButton.addEventListener('click', togglePopup);
 closeButtom.addEventListener('click', togglePopup);
 
 // Заполнение формы данными профайла
 function openPopup() {
     nameInput.value = nameProfile.textContent;
     jobInput.value = description.textContent;
+
+    togglePopup();
+
 }
 
 openButton.addEventListener('click', openPopup);
